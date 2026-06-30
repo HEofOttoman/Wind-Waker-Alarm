@@ -3,6 +3,12 @@ a waker/alarm to wake my sleepy up
 
 Made for [blare](https://blare.hackclub.com)!
 
+Folders for the following:
+- Schematics: Designs for the wiring (pcb?)
+- Case: CAD models of the alarm
+- Firmware: Firmware for the alarm clock
+
+
 ## Gallery
 
 
@@ -13,6 +19,11 @@ what will be in the kit
 - 12 Keyboard Switches
 - 3.3V Piezo Buzzer
 - Some Jumper Cables for wiring
+
+### Ideas:
+- Reading music from USB?
+- RTC?
+- Real speaker for the music?
 
 ## References
 - Guide!
