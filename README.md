@@ -1,6 +1,8 @@
 # Wind Waker Alarm
 a waker/alarm to wake my sleepy up
 
+![ideasketch](designsketch.png)
+
 Made for [blare](https://blare.hackclub.com)!
 
 Folders for the following:
@@ -10,6 +12,7 @@ Folders for the following:
 
 
 ## Gallery
+![ideasketch](designsketch.png)
 
 
 ## BOM
