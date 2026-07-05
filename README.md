@@ -29,4 +29,4 @@ what will be in the kit
 - Real speaker for the music?
 
 ## References
-- Guide!
+- [Guide](https://blare.hackclub.com)!

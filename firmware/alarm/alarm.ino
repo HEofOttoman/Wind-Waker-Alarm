@@ -10,7 +10,7 @@
 
 Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
-
+new DateTime now;
 
 void setup() {
   // put your setup code here, to run once:
