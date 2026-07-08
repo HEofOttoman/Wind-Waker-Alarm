@@ -10,6 +10,13 @@
 
 Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
+#include "mxswitch.h"
+const int switches[2, 3, 4, 5];
+
+for (i=0; i < 4; i++) {
+  buzzer MxSwitch()
+}
+
 new DateTime now;
 
 void setup() {

@@ -13,7 +13,7 @@ Folders for the following:
 
 ## Gallery
 ![ideasketch](designsketch.png)
-
+![Wiring Schematic](schematic.png)
 
 ## BOM
 what will be in the kit
