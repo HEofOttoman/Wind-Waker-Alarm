@@ -8,3 +8,5 @@ I really tried to get myself familiar with onshape, uhh never mind then.
 ## Firmware
 8 July 2026 - I had to download platformIO because I didn't want time untracked by hackatime, and also because it's much more convenient.
 I had to deal with the continuous missing header error spam
+
+I am trying to frame this part of the project as practice for my upcoming robotics exam.

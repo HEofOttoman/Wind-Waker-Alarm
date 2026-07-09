@@ -3,6 +3,17 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7789.h>
 
+#include <Wifi.h>
+#include <time.h>
+
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "WIFI_PASSWORD";
+
+// Timezone settings
+const char* ntpServer = "au.pool.ntp.org";
+const int gmtOffset_sec = 36000;
+const int daylightOffset_sec = 0;
+
 #define TFT_CS 1
 #define TFT_RST 2
 #define TFT_DC 3
@@ -12,17 +23,29 @@
 Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
 #include "mxswitch.h"
-// const int switches[] = [2, 3, 4, 5];
 
-// for (i=0; i < 4; i++) {
-//   buzzer MxSwitch()
-// }
+MxSwitch switch2(2);
+MxSwitch switch3(3);
+MxSwitch switch4(4);
+MxSwitch switch5(5);
+
+#include "buzzer.h"
 
 // new DateTime now;
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
+
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.println(".");
+  }
+
+  configTime(gmtOffset_sec, 0, ntpServer);
+  
+  Serial.println("CONNECTED TO INTERNET");
 
   tft.init(284, 76);
   // tft.setColRowStart(82, 18);
@@ -32,6 +55,13 @@ void setup() {
 
   tft.setCursor(0, 0);
 
+  // for (int i=0; i<4; i++) { classes[i].begin() }
+  switch2.begin();
+  switch3.begin();
+  switch4.begin();
+  switch5.begin();
+
+  
 }
 
 void loop() {
