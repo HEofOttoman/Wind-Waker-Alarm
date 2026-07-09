@@ -144,6 +144,12 @@
 		(path "/cf6af805-cba6-496d-9e4c-510b94783909")
 		(sheetname "/")
 		(sheetfile "windwaker.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -518,7 +524,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "+3V3")
+			(net "Net-(BZ1-+)")
 			(pinfunction "+_1")
 			(pintype "passive")
 			(uuid "b1663325-8388-4bf0-b721-1cda831ee673")
@@ -1113,6 +1119,12 @@
 		(path "/2a3b5e9f-bcca-4460-b739-bbfea456de12")
 		(sheetname "/")
 		(sheetfile "windwaker.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1410,6 +1422,12 @@
 		(path "/084a4adb-fc2d-48b4-8663-bf6dccd62e45")
 		(sheetname "/")
 		(sheetfile "windwaker.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1707,6 +1725,12 @@
 		(path "/77196445-aec7-4876-8624-5a34c356a785")
 		(sheetname "/")
 		(sheetfile "windwaker.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3626,7 +3650,7 @@
 			(drill 0.9)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "unconnected-(U1-D4-Pad6)")
+			(net "Net-(BZ1-+)")
 			(pinfunction "D4_6")
 			(pintype "bidirectional")
 			(uuid "0b817273-1c9c-4fa8-b2d6-082ba513dbaa")
@@ -3945,28 +3969,52 @@
 		(uuid "f6299413-0f9d-4e12-8cd6-0b37123aa4a7")
 	)
 	(segment
+		(start 115.804594 114.5)
+		(end 110.324594 109.02)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "Net-(BZ1-+)")
+		(uuid "0cbc5038-2fa0-4e53-b203-090b8a83e393")
+	)
+	(segment
+		(start 180.994594 115.76)
+		(end 179.734594 114.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "Net-(BZ1-+)")
+		(uuid "2a62fd28-abf0-4897-b6e4-549f3a86972c")
+	)
+	(segment
+		(start 179.734594 114.5)
+		(end 115.804594 114.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "Net-(BZ1-+)")
+		(uuid "6e00e19e-5838-41f7-9be1-10797cb485dd")
+	)
+	(segment
+		(start 174.764594 92.37)
+		(end 174.764594 106.936346)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "+3V3")
+		(uuid "167926dc-74a8-4086-94df-63edd662c235")
+	)
+	(segment
+		(start 163.771192 117.06)
+		(end 157.531192 123.3)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "+3V3")
+		(uuid "38183357-c0bc-4ce4-b0d4-e1f5ef1adfe8")
+	)
+	(segment
 		(start 103.994695 123.3)
 		(end 157.531192 123.3)
 		(width 0.2)
 		(layer "F.Cu")
 		(net "+3V3")
 		(uuid "3ccf2414-a96c-4c7e-9760-31d1a3cff895")
-	)
-	(segment
-		(start 165.071192 115.76)
-		(end 180.994594 115.76)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "+3V3")
-		(uuid "5b2e59be-8250-4ca9-9c93-4c4cb51a980a")
-	)
-	(segment
-		(start 157.531192 123.3)
-		(end 165.071192 115.76)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "+3V3")
-		(uuid "617ffe9b-aa8e-45fe-bf49-3d5786d7f345")
 	)
 	(segment
 		(start 99.684594 114.58)
@@ -3977,6 +4025,14 @@
 		(uuid "732d9198-c375-480e-90d9-687e93b1fdfc")
 	)
 	(segment
+		(start 173.614594 91.22)
+		(end 174.764594 92.37)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "+3V3")
+		(uuid "7de9db39-e6a6-454f-8617-ebced8a4f9b0")
+	)
+	(segment
 		(start 99.684594 118.989899)
 		(end 103.994695 123.3)
 		(width 0.2)
@@ -3985,20 +4041,12 @@
 		(uuid "a1b59f5b-7ff6-41e8-aa36-a6d50f233e6e")
 	)
 	(segment
-		(start 180.994594 115.76)
-		(end 180.994594 98.6)
+		(start 174.764594 106.936346)
+		(end 164.64094 117.06)
 		(width 0.2)
 		(layer "F.Cu")
 		(net "+3V3")
-		(uuid "c89c31cc-e3fb-44fa-ba55-19cd0c94da5d")
-	)
-	(segment
-		(start 180.994594 98.6)
-		(end 173.614594 91.22)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "+3V3")
-		(uuid "de9da553-0836-4281-8fd2-281fb23ce3ec")
+		(uuid "a9d10d49-87af-4adf-87ee-7574d287ee83")
 	)
 	(segment
 		(start 105.244594 109.02)
@@ -4007,6 +4055,14 @@
 		(layer "F.Cu")
 		(net "+3V3")
 		(uuid "e962c1b9-0fb8-4417-86d0-845ffbaa6747")
+	)
+	(segment
+		(start 164.64094 117.06)
+		(end 163.771192 117.06)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "+3V3")
+		(uuid "f232f44a-5072-40f1-878e-5900a406d817")
 	)
 	(segment
 		(start 128.084594 93.76)

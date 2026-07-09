@@ -30,6 +30,7 @@ MxSwitch switch4(4);
 MxSwitch switch5(5);
 
 #include "buzzer.h"
+Buzzer buzz(6);
 
 // new DateTime now;
 
@@ -66,5 +67,15 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  
+  struct tm timeinfo;
+
+  if(!getLocalTime(&timeinfo)){
+    Serial.println("Failed to obtain time");
+    delay(1000);
+    return;
+  }
+
+  Serial.println(&timeinfo, "%A, %B %d %Y %H:%M:%S");
+  delay(1000);
+
 }

@@ -1594,6 +1594,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 92.71) (xy 173.99 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c26b951-a512-46f9-b5f0-587a4ef2d474")
+	)
+	(wire
+		(pts
 			(xy 130.81 90.17) (xy 140.97 90.17)
 		)
 		(stroke
@@ -2287,86 +2297,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 130.81 64.77 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48689bdc-8fd6-40be-8ead-a1abf08e35a8")
-		(property "Reference" "#PWR07"
-			(at 130.81 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 130.81 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 130.81 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cd585078-bfb5-4904-8578-a02384b5c561")
-		)
-		(instances
-			(project "windwaker"
-				(path "/02a39cfe-b783-40f3-817f-4ab00e2c0b53"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Buzzer")
-		(at 133.35 62.23 90)
+		(at 176.53 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2377,29 +2309,29 @@
 		(fields_autoplaced yes)
 		(uuid "55c0fb10-1f4d-420b-b97c-9ca6e516fe1e")
 		(property "Reference" "BZ1"
-			(at 137.16 60.2048 90)
+			(at 180.34 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "Buzzer"
-			(at 137.16 62.7448 90)
+			(at 180.34 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "my_custom_library:Buzzer_12x9.5RM7.6"
-			(at 130.81 62.865 90)
+			(at 175.895 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2410,7 +2342,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 62.865 90)
+			(at 175.895 92.71 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2421,7 +2353,7 @@
 			)
 		)
 		(property "Description" "Buzzer, polarized"
-			(at 133.35 62.23 0)
+			(at 176.53 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2967,7 +2899,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 135.89 64.77 0)
+		(at 173.99 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2975,10 +2907,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e41b66a6-1346-4d87-9046-909885738020")
 		(property "Reference" "#PWR08"
-			(at 135.89 71.12 0)
+			(at 173.99 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2989,7 +2920,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 135.89 69.85 0)
+			(at 173.736 103.124 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2999,7 +2930,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 64.77 0)
+			(at 173.99 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3010,7 +2941,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 64.77 0)
+			(at 173.99 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3021,7 +2952,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 64.77 0)
+			(at 173.99 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
