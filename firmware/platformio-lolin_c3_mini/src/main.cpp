@@ -34,6 +34,9 @@ Buzzer buzz(6);
 
 // new DateTime now;
 
+int batteryLevel = 0;
+const byte batteryPin = A0; // Remember to check if this is valid
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
@@ -62,6 +65,7 @@ void setup() {
   switch4.begin();
   switch5.begin();
 
+  // batteryLevel = analogRead(A0); // solder needed
   
 }
 
@@ -77,5 +81,9 @@ void loop() {
 
   Serial.println(&timeinfo, "%A, %B %d %Y %H:%M:%S");
   delay(1000);
+
+  tft.print(&timeinfo, "%A, %B %d %Y %H:%M:%S");
+
+  // batteryLevel = analogRead(A0); // solder connection needed
 
 }
