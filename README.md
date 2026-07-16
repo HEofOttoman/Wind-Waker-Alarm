@@ -1,32 +1,35 @@
 # Wind Waker Alarm
-a waker/alarm to wake my sleepy up
-
 ![ideasketch](designsketch.png)
+A waker/alarm to wake my sleepy up that also can act as a macropad, including a rechargable battery.
 
-Made for [blare](https://blare.hackclub.com)!
-
-Folders for the following:
+This repository contains folders for the following:
 - Schematics: Designs for the wiring (pcb?)
 - Case: CAD models of the alarm
 - Firmware: Firmware for the alarm clock
 
+Made for [blare](https://blare.hackclub.com)!
+
 
 ## Gallery
 ![ideasketch](designsketch.png)
-![Wiring Schematic](schematic.png)
+<!-- ![Wiring Schematic](schematic.png) -->
+![wiring schematic](schematic.png)
+![pcb1](pcb1.png)
+![3d pcb](<3d pcb.png>)
 
 ## BOM
-what will be in the kit
-- Lolin C3 Mini ESP 32
-- 2.25in TFT display
-- 12 Keyboard Switches
-- 3.3V Piezo Buzzer
+- 1x Lolin C3 Mini ESP 32
+- 1x 2.25in TFT display
+- 12x Keyboard Switches
+- 1x 3.3V Piezo Buzzer
 - Some Jumper Cables for wiring
+- 1x Wemos Battery Shield
+- 8x Stackable header pins
 
 ### Ideas:
 - Reading music from USB?
-- RTC?
-- Real speaker for the music?
+- Time from a real RTC
+- Real speaker module to play the music
 
 ## References
 - [Guide](https://blare.hackclub.com)!
