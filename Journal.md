@@ -9,7 +9,7 @@ I tried thinking of extra features to add. I thought of adding a USB-A port with
 
 
 ## CAD
-I really tried to get myself familiar with onshape, uhh never mind then. I don't like it. I decided to follow the tutorial for the hackpad, as it was essentially a macropad anyway. 
+I really tried to get myself familiar with onshape, uhh never mind then. I don't like it. I decided to follow the tutorial for the hackpad, as it was essentially a macropad. I had to account for the battery shield, so I had to shape a bulge.  
 
 ## Firmware
 8 July 2026 - I had to download platformIO because I didn't want time untracked by hackatime, and also because it's much more convenient.
