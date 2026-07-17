@@ -1,6 +1,6 @@
 # Wind Waker Alarm
 <!-- ![ideasketch](designsketch.png) -->
-![assembly](https://cdn.hackclub.com/019f708d-03d7-7fab-abe8-6136cfd4587b/image.png)
+![assembly](https://cdn.hackclub.com/019f7268-67d0-700d-bc93-f30fc6e02916/image.png)
 
 A waker/alarm to wake me up that also can act as a macropad, including a rechargable battery and wireless capabilities.
 
@@ -23,6 +23,7 @@ This repository contains folders for the following:
 ![wiring schematic](schematic.png)
 ![pcb1](pcb1.png)
 ![3d pcb](<3d pcb.png>)
+![assembly](https://cdn.hackclub.com/019f708d-03d7-7fab-abe8-6136cfd4587b/image.png)
 
 ## BOM (TBC)
 | Qty | Part Name                    | Source                                                                                                                                                                                                                                              | Price (AUD) |
@@ -34,7 +35,7 @@ This repository contains folders for the following:
 | -   | Jumper cables                | Provided in Kit                                                                                                                                                                                                                                     | -           |
 | 1   | WEMOS D1 Mini Battery Shield | [Aliexpress?](https://www.aliexpress.com/item/1005010742110580.html)                                                                                                                                                                                | $1.44       |
 | 16  | Stackable Header Pins        | [core electronics](https://core-electronics.com.au/header-stackable-01x20-254mm-tht.html)                                                                                                                                                           | $0.90       |
-| 1   | 3.7v LiPo Battery            | [Temu (polarity with shield check needed)](https://www.temu.com/au/302025-3-7v-150mah-lithium-polymer-battery-with-built-in-multi-protection-circuitry-a-compact-rechargeable-lithium-polymer-battery-suitable-for-dashcams-g-606328114217288.html) | $           |
+| 1   | 3.7v LiPo Battery            | [Temu (polarity with shield check needed)](https://www.temu.com/au/302025-3-7v-150mah-lithium-polymer-battery-with-built-in-multi-protection-circuitry-a-compact-rechargeable-lithium-polymer-battery-suitable-for-dashcams-g-606328114217288.html) | $2.85       |
 | 1   | Custom PCB                   | JLCPCB                                                                                                                                                                                                                                              | ~$5         |
 
 *Made with [Markdown tablesgenerator.com](https://www.tablesgenerator.com/markdown_tables)*
