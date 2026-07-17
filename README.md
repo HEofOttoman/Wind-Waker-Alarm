@@ -1,5 +1,7 @@
 # Wind Waker Alarm
 <!-- ![ideasketch](designsketch.png) -->
+![assembly](https://cdn.hackclub.com/019f708d-03d7-7fab-abe8-6136cfd4587b/image.png)
+
 A waker/alarm to wake me up that also can act as a macropad, including a rechargable battery and wireless capabilities.
 
 This repository contains folders for the following:
