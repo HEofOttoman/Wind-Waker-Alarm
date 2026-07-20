@@ -6,8 +6,8 @@
 #include <Wifi.h>
 #include <time.h>
 
-const char* ssid = "YOUR_WIFI_SSID";
-const char* password = "WIFI_PASSWORD";
+const char* ssid = "Wokwi-GUEST";
+const char* password = "";
 
 // Timezone settings
 const char* ntpServer = "au.pool.ntp.org";
@@ -37,6 +37,49 @@ Buzzer buzz(6);
 int batteryLevel = 0;
 const byte batteryPin = A0; // Remember to check if this is valid
 
+void readVoltage(int seconds) {
+  int raw_value = analogRead(batteryPin);
+
+  float voltage = (raw_value / 4095.5);
+
+  int percentage = map(voltage * 100, 320, 420, 0, 100);
+  percentage = constrain(percentage, 0, 100);
+
+  
+}
+
+void alarmISR() {
+  buzz.beep(10, 100);
+}
+
+const int MODE_CLOCK = 0;
+const int MODE_MACRO = 1;
+const int MODE_ALARM = 2;
+
+int currentMode = MODE_CLOCK;
+
+void matchState() {
+  switch (currentMode)
+  {
+  case MODE_CLOCK:
+    Serial.println(F("Clock display mode"));
+    break;
+
+  case MODE_MACRO:
+    Serial.println(F("Macropad mode"));
+    break;
+  
+  case MODE_ALARM:
+    Serial.println(F("Alarm mode"));
+    
+    break;
+
+  default:
+    currentMode = MODE_CLOCK;
+    break;
+  }
+}
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
@@ -47,14 +90,14 @@ void setup() {
     Serial.println(".");
   }
 
-  configTime(gmtOffset_sec, 0, ntpServer);
+  configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
   
-  Serial.println("CONNECTED TO INTERNET");
+  Serial.println(F("CONNECTED TO INTERNET"));
 
   tft.init(284, 76);
   // tft.setColRowStart(82, 18);
   tft.setRotation(2);
-  Serial.println("TFT display initialised!");
+  Serial.println(F("TFT display initialised!"));
   tft.fillScreen(ST77XX_BLACK);
 
   tft.setCursor(0, 0);
@@ -85,5 +128,5 @@ void loop() {
   tft.print(&timeinfo, "%A, %B %d %Y %H:%M:%S");
 
   // batteryLevel = analogRead(A0); // solder connection needed
-
+  
 }

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "platformio-lolin_c3_mini",
+			"path": "firmware/platformio-lolin_c3_mini"
+		}
+	],
+	"settings": {}
+}
