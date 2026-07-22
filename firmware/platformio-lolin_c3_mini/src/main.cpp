@@ -1,4 +1,5 @@
 #include <Arduino.h>
+
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7789.h>
@@ -58,7 +59,7 @@ const int MODE_ALARM = 2;
 
 int currentMode = MODE_CLOCK;
 
-void matchState() {
+void getMode() {
   switch (currentMode)
   {
   case MODE_CLOCK:
@@ -114,6 +115,8 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  // getMode();
+  
   struct tm timeinfo;
 
   if(!getLocalTime(&timeinfo)){
